@@ -2,7 +2,7 @@
  * Modul           : 3 - Structures & Dynamic Arrays
  * Hari dan Tanggal    : Senin, 27 April 2026
  * Nama (NIM)          : Aqilah Safitri Sjarif (13224050)
- * Nama File           : soal1.c
+ * Nama File           : soal2.c
  * Deskripsi           : ngurutin meteor
  */
 #include <stdio.h>
@@ -50,7 +50,7 @@ int main(){
     }
     
     for (int i = 0; i < 3; i++){
-        printf("%s %d %d", list[i].nama, list[i].massa, list[i].kemurnian);
+        printf("%s %d %d\n", list[i].nama, list[i].massa, list[i].kemurnian);
     }
 
     free(list);
