@@ -20,7 +20,6 @@ int main(){
     scanf("%d", &N);
     
     Meteor *list = (Meteor*) malloc(N * sizeof(Meteor));
-    
     for (int i = 0; i < N; i++){
         scanf("%s", list[i].nama);
         scanf("%d", &list[i].massa);
@@ -49,10 +48,14 @@ int main(){
         }
     }
     
+    if (N > 3){
     for (int i = 0; i < 3; i++){
         printf("%s %d %d\n", list[i].nama, list[i].massa, list[i].kemurnian);
-    }
-
+    }}
+    else{
+    for (int i = 0; i < N; i++){
+        printf("%s %d %d\n", list[i].nama, list[i].massa, list[i].kemurnian);
+    }}
     free(list);
     return 0;
 }
